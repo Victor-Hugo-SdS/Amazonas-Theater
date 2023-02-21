@@ -58,6 +58,7 @@ nav ul li a:hover {
 #contents {
     width: 710px;
     float: left;
+    margin-bottom: 20px;
 }
 
 aside {
@@ -65,6 +66,7 @@ aside {
     float: right;
     background: #ebe7dd;
     padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 section#visit {
@@ -83,12 +85,17 @@ section#gallery a {
     float: left;
     padding: 17px 15px 18px 15px;
     margin: 10px 0 0 20px;
+    transform: scale(0.8);
+    transition: ease 0.4s;
+}
+
+section#gallery a:hover {
+        transform: scale(1.1);
 }
 
 section#gallery img{
     margin-left: 2px;
     margin-top: 3px;
-
 }
 
 article#video {
@@ -107,6 +114,14 @@ article#exp {
     float: left;
     width: 310px;
     margin: 15px 0 0 25px;
+}
+
+article#exp ul a {
+    color: #86521a;
+}
+
+article#exp ul a:hover {
+    border-bottom: #af670a solid 1px;
 }
 
 article#schedule {
@@ -155,4 +170,21 @@ fieldset {
 
 legend {
     display: none;
+}
+
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(../images/background-footer.png) no-repeat center top;
+    margin-top: 20px;
+}
+
+footer>p a {
+    padding: 2px 10px;
+}
+
+
+footer>p a:hover {
+    color: #463117;
 }
